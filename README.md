@@ -1,2 +1,1 @@
-"# TypeScript" 
-# TypeScript
+# Practice TypeScript
