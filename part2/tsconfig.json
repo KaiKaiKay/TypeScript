@@ -1,0 +1,62 @@
+{
+    //tsconfig.json 是ts變異器的配置文件 ts會根據此對代碼進行編譯
+    
+    //include 用來指定哪些文件"要被編譯"
+    //** 表示任意目錄 ; * 表示任意文件
+    "include": [
+        "./src/**/*"
+    ],
+
+    //exclude 用來指定哪些文件"不要被編譯"
+    //默認 "node_modules" "bower_components" "jspm_packages"
+    "exclude": [],
+
+    //compilerOptions 編譯器的配置
+    "compilerOptions": {
+        //target 用來指定ts編譯後的ES版本
+        "target": "ES6",
+        
+        //module 用來指定要使用的模塊化規範
+        "module": "ES6",
+        
+        //lib 用來指定要使用的庫 通常不需要改
+        //"lib": []
+
+        //outDir 用來指定編譯後文件所在的目錄
+        "outDir": "./dist",
+
+        //outFile 將代碼合併為一個文件
+        //設置outFile後 所有全局作用域的代碼會合併到同一個文件
+        //"outFile": ""
+
+        //allowJs 是否對js文件進行編譯 默認false
+        "allowJs": false,
+
+        //checkJs 檢查js代碼是否符合與法規範 默認false
+        "checkJs": false,
+
+        //removeComments 是否移除註解 默認false
+        "removeComments": true,
+
+        //noEmit 不生成編譯後的文件
+        "noEmit": false,
+
+        //noEmitOnError 當有報錯時 就不生成編譯後的文件
+        "noEmitOnError": true,
+        
+        //strict 所有嚴格檢查的開關
+        "strict": true,
+
+        //alwaysStrict 用來設置 編譯後的文件是否使用嚴格模式 默認false
+        "alwaysStrict": true,
+
+        //noImplicitAny 不允許隱式any類型
+        "noImplicitAny": true,
+
+        //noImplicitThis 不允許不明確類型的this
+        "noImplicitThis": true,
+
+        //strictNullChecks 嚴格檢查空值
+        "strictNullChecks": true,
+    }
+}
